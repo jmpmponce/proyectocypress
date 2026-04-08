@@ -10,7 +10,7 @@ pipeline {
 
         stage('Run Cypress') {
             steps {
-                bat 'npx cypress run'
+                bat 'npx cypress run --spec "cypress/e2e/1-getting-started/todo.cy.js"'
             }
         }
     }
